@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1920px) and (min-width: 1024px) {
+ 
+   .rem_main_container {
+    padding-left: 256px;
+   }
+   .master-body {
+    padding-left: 40px;
+    }
+   
+    }
+
+@media only screen and (max-width: 1780px) {
+
+}
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1550px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+  .mster_view_body .card-box h3 {
+    font-size: 18px;
+}
+.mster_view_card {
+  width: 23%;
+}
+
+}
+
+@media only screen and (max-width: 1280px) {
+  .mster_view_body .card-box h3 {
+    font-size: 11px;
+}
+
+
+}
+
+@media only screen and (max-width: 1150px) {
+  .mster_view_body .card-box h3 {
+    font-size: 10.5px;
+}
+}
+
+@media only screen and (max-width: 1080px) {
+  .mster_view_card {
+    width: 22%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mster_view_card {
+    width: 22.5%;
+  }
+    
+}
+
+
+@media only screen and (max-width: 991px) {
+ .about_utkal {
+  flex-direction: column-reverse;
+ }
+
+ .about-content p {
+  width:100%;
+  margin-top: 20px;
+ }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  .rem_desktop_sidebar{
+    display: none;
+  }
+  .mster_view_card {
+    width: 22%;
+  }
+  .master-body {
+    padding: 0px 20px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .mster_view_card {
+    width: 31%;
+  }
+  .card-box-footer {
+    font-size: 11px;
+  }
+
+}
+
+@media only screen and (max-width: 631px) {
+  .mster_view_card {
+    width: 30%;
+  }
+ 
+}
+
+@media screen and (max-width: 575px) {}
+
+@media only screen and (max-width: 520px) {}
+
+@media only screen and (max-width: 420px) {}
+
+@media screen and (max-width: 480px) {
+  .mster_view_card {
+    width: 47%;
+  }
+  .card-box-footer {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .charikhetra {
+    width:250px;
+  }
+  .mster_view_card {
+    width: 46%;
+  }
+               
+}
+
+@media only screen and (max-width: 360px) {
+  
+}
+
+
+

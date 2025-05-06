@@ -1,0 +1,71 @@
+.container {
+    text-align: center;
+  }
+  
+  .direction-card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #ddd;
+  }
+  
+  .direction-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .direction-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .direction-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* District Images Hover Effect */
+  .district-images-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  .district-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .direction-card:hover .district-image {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  /* Different positions for images */
+  .district-0 { transform: translate(-100px, -50px); }
+  .district-1 { transform: translate(100px, -50px); }
+  .district-2 { transform: translate(-50px, 50px); }
+  .district-3 { transform: translate(50px, 50px); }
+  .district-4 { transform: translate(-50px, -100px); }
+  .district-5 { transform: translate(50px, -100px); }
+  
