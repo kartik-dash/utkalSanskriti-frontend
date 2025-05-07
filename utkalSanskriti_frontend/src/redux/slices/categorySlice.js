@@ -1,4 +1,3 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 import { categories } from '../../assets/assets';  // Make sure this is an array or object
 
@@ -70,6 +69,9 @@ const categorySlice = createSlice({
     setSelectedSaivaKhetra: (state, action) => {
       state.selectedSaivaKhetra = action.payload;
       localStorage.setItem(" selectedSaivaKhetra", JSON.stringify(action.payload)); 
+    },
+    setSelectedSearchResult: (state,action) => {
+      state.selectedSearchResult =action.payload;
     }
     
   },
@@ -88,6 +90,7 @@ export const {
   setSelectedSouth,
   setSelectedAdiShaktiPitha,
   setSelectedSaivaKhetra,
+  setSelectedSearchResult
 } = categorySlice.actions;
 
 // Selectors to access the Redux state
@@ -104,5 +107,6 @@ export const selectSelectedNorth = (state) => state.category.selectedNorth;
 export const selectSelectedSouth = (state) => state.category.selectedSouth;
 export const selectSelectedAdiShaktiPitha = (state) => state.category.selectedAdiShaktiPitha;
 export const selectSelectedSaivaKhetra = (state) => state.category.selectedSaivaKhetra;
+export const selectSelectedSearchResult =(state)=> state.category.selectedSearchResult;
 
 export default categorySlice.reducer;

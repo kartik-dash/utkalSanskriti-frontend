@@ -18,7 +18,7 @@ const DanceDetails = () => {
 
     <div className="container mx-auto p-6">
         {SelectedDance ? (
-          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-white mt-[80px] shadow-lg rounded-xl overflow-hidden">
             <div className="relative">
               <img 
               src={SelectedDance.image}

@@ -44,7 +44,9 @@ import UpcomingEventCard from '../components/Card/UpcomingEventCard';
 import Services from '../pages/Services';
 import Dislcaimer from '../pages/Dislcaimer';
 import Faq from '../pages/Faq';
-
+import AllCategoryList from "../components/Category/AllCategoryList";
+import TempleSearchResult from '../components/Search/TempleSearchResult';
+import TempleSearchDetails from "../components/Search/TempleSearchDetails";
 
 
 const UserRoutes = [
@@ -94,8 +96,10 @@ const UserRoutes = [
   { path: '/event', component: UpcomingEventCard},
   { path: '/services', component: Services},
   { path: '/disclaimer', component: Dislcaimer},
-  { path: '/faq', component:Faq}
-
+  { path: '/faq', component:Faq},
+  { path: '/temples/search',component:TempleSearchResult},
+  { path: '/searchedTemple/:productId', component:TempleSearchDetails },
+  { path: '/showall', component: AllCategoryList},
 ];
 
 export default UserRoutes;

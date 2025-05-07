@@ -95,8 +95,82 @@ const faqData = [
   },
    
   {
-    question: ""
-  }
+    question: "Is online consultation or ritual booking available?",
+    answer:
+       "Yes. We offer online consultations with Pandits and allow remote bookings for rituals, especially useful for NRIs and international devotees."
+  },
+
+  {
+    question:"Do you help with festival attendance (like Rath Yatra)?",
+    answer:
+       "Yes. We assist with planning, logistics, passes (where possible), and spiritual guidance for major festivals including Rath Yatra, Chandan Yatra, and Durga Puja."
+  },
+
+  {
+    question:"Can I donate or sponsor a religious or cultural activity?",
+    answer:
+       "Yes. You can sponsor rituals, events, or donate toward our cultural preservation efforts. Sponsorship options are listed on our Donate page."
+  },
+
+  {
+    question:"Is Utkal Sanskriti Sansthanam affiliated with a temple or government?",
+    answer: 
+       "No. We are an independent nonprofit trust, although we collaborate with temples, religious scholars, and cultural institutions as needed."
+  },
+
+  {
+    question:"Do you offer Odia or Sanskrit cultural classes?",
+    answer:
+       "While not a school, we occasionally host workshops and awareness programs related to Odia and Sanskrit literature, chants, and scriptures."
+  },
+
+  {
+    question:"Do you support local artisans and craftsmen?",
+    answer:
+       "Yes. We promote and connect traditional artisans, weavers, and performers with tourists and patrons to help sustain Odisha’s intangible heritage."
+  },
+
+  {
+    question:"Are your services available year-round?",
+    answer:
+       "Yes. We operate throughout the year. However, temple-specific services may depend on availability and seasonal schedules."
+  },
+
+  {
+    question:"How can I become a volunteer or member?",
+    answer:
+       "You can apply to volunteer or register for membership through our website. Members receive event invites, volunteer opportunities, and updates."
+  },
+
+  {
+    question:"Do you offer interpretation or translation support for tourists?",
+    answer:
+       "Yes. We provide interpreters fluent in Odia, Hindi, Sanskrit, and English to assist non-native visitors."
+  },
+
+  {
+    question:"How can I contact Utkal Sanskriti Sansthanam?",
+    answer:
+       "Visit our Contact Us page, email us, call our helpline, or message us on WhatsApp. We’re also available on social media platforms."
+  },
+
+  {
+    question:"Can you help plan a full spiritual tour of Odisha?",
+    answer:
+      "Yes. We can curate a multi-day itinerary covering temples, rituals, cultural experiences, and accommodation — ideal for solo travelers, families, and tour groups."
+  },
+
+  {
+    question:"Is there a mobile app for your services?",
+    answer:
+       "Our app is under development. Meanwhile, our mobile-friendly website and WhatsApp support ensure seamless communication."
+  },
+
+  {
+    question:"Do you provide CSR partnerships or NGO collaborations?",
+    answer:
+       "Yes. We welcome partnerships with NGOs, spiritual groups, and corporates for CSR activities aligned with cultural, spiritual, and heritage goals."
+  },
   
   
 ];
@@ -114,7 +188,7 @@ const Faq = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
           Frequently Asked Questions (FAQs)
         </h2>
-        <h3 className="text-lg text-center text-gray-600 mb-6">
+        <h3 className="text-lg text-center text-gray-600 font-bold mb-6">
           Utkal Sanskriti Sansthanam – Preserving the Spirit of Odisha’s Culture and Spirituality
         </h3>
         <div className="space-y-4">

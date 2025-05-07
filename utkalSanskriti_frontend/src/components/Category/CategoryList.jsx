@@ -31,20 +31,29 @@ const CategoryList = () => {
 
   return (
     <div className="relative container mx-auto p-6">
-      {/* {/ Left Arrow /} */}
+      {/* Show All Button on Top */}
+      <div className="mb-6 flex justify-center sm:justify-end">
+        <button
+          onClick={() => navigate('/showall')}
+          className="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition-all"
+        >
+          Show All
+        </button>
+      </div>
+
+      {/* Left Arrow */}
       {currentPage > 0 && (
         <button
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 transition-all z-10"
         >
-          {/* {/ Tailwind Heroicon /} */}
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
       )}
 
-      {/* {/ Categories Grid /} */}
+      {/* Categories Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {currentCategories.map((category) => (
           <div
@@ -62,15 +71,14 @@ const CategoryList = () => {
         ))}
       </div>
 
-      {/* {/ Right Arrow /} */}
+      {/* Right Arrow */}
       {currentPage < totalPages - 1 && (
         <button
           onClick={handleNext}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 transition-all z-10"
         >
-          {/* {/ Tailwind Heroicon /} */}
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}  d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
       )}

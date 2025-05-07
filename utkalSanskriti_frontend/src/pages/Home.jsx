@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "../components/Slider/Slider";
+import { useNavigate } from "react-router-dom";
 import Cards from "../components/Card/Cards";
 import { cardData, sliderImages } from "../assets/assets";
 import CategoryList from "../components/Category/CategoryList";
@@ -13,6 +14,18 @@ import Direction from "./Direction";
 import SaivaKhetraCard from "../components/Card/SaivaKhetraCard";
 
 export default function Home() {
+  const [query,setQuery]=useState("")
+  const navigate=useNavigate();
+  const handleSearch=()=>{
+    if(query.trim()){
+      navigate(`/temples/search?query=${encodeURIComponent(query)}`)
+    }
+  };
+  
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") handleSearch();
+  };
+
   return (
     <div className="space-y-0 select-none overflow-hidden">
       {/* Hero Section */}
@@ -25,6 +38,23 @@ export default function Home() {
           <p className="text-xl sm:text-3xl mt-4">
             "Discover Odisha's Rich Cultural Legacy - All In One Place."
           </p>
+            {/* Search Input */}
+            <div className="mt-6 flex justify-center">
+            <input
+              type="text"
+              placeholder="Search temples or districts..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+              className="w-full max-w-md px-4 py-2 rounded-l-md text-black"
+            />
+            <button
+              onClick={handleSearch}
+              className="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 text-white"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
 

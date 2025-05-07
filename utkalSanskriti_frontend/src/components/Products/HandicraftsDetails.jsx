@@ -16,7 +16,7 @@ const HandicraftsDetails = () => {
 
       <div className="container mx-auto p-6">
         {SelectedHandicrafts ? (
-          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-white shadow-lg mt-[80px] rounded-xl overflow-hidden">
             <div className="relative">
               <img 
               src={SelectedHandicrafts.image}
